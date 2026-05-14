@@ -7,3 +7,17 @@ ___
 Here is an overview of what we'll build in this lab:
 
 <img src="images/demo_overview.png" width=800px>
+
+
+additional work to do
+python -m pip install --upgrade "snowflake-snowpark-python[pandas]"
+
+
+uv run .\steps\04_create_pos_view.py     
+
+## you need to dwonload and install snow or
+run for bash shell
+pip install -r requirements.txt
+
+
+snow snowpark execute procedure "daily_city_metrics_update_sp()"

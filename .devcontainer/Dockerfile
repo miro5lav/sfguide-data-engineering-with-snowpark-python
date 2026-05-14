@@ -15,3 +15,12 @@ COPY environment.yml .
 RUN conda env create \
     && conda init \
     && rm environment.yml
+
+FROM python:3.11-slim
+
+RUN pip install \
+    snowflake-cli-labs \
+    snowflake-snowpark-python \
+    pandas
+
+WORKDIR /workspace    
